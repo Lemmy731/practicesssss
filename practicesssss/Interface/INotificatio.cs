@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace practicesssss.Interface
 {
-    public interface IAccount
+    public interface INotify
     {
-        void AddAccount();
+        void SendNotification(string sms);
     }
 }

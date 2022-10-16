@@ -5,15 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace practicesssss
+namespace practicesssss.Implementation
 {
-    public class Useinterface
+    public class SMS : INotify
     {
-        public static void UseInterface(IAccount account)
+        public void SendNotification(string sms)
         {
-            account.AddAccount();
+            Console.WriteLine($"send sms to {sms}");    
         }
-
-        
     }
 }

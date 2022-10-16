@@ -44,10 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="abstr.cs" />
-    <Compile Include="Implementation\Account1.cs" />
-    <Compile Include="Useinterface.cs" />
-    <Compile Include="Implementation\Account.cs" />
-    <Compile Include="Interface\IAccount.cs" />
+    <Compile Include="Implementation\Email.cs" />
+    <Compile Include="Interface\IStatement.cs" />
+    <Compile Include="Display.cs" />
+    <Compile Include="Implementation\SMS.cs" />
+    <Compile Include="Interface\INotificatio.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

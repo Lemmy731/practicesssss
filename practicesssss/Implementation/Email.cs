@@ -7,12 +7,15 @@ using System.Threading.Tasks;
 
 namespace practicesssss.Implementation
 {
-    public class Account : IAccount
+    public class Email : INotify
     {
-        public void AddAccount()
+        public void SendNotification(string email)
         {
-            Console.WriteLine("this is me going jjjdjj");
+            Console.WriteLine($"send email to : {email}");
         }
 
-    }  
+       
+
+        
+    }
 }

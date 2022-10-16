@@ -5,48 +5,39 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
+using System.Security.Cryptography.X509Certificates;
 
 namespace practicesssss
 {
     class Program
     {
-       // Consider an array/list of sheep where some sheep may be missing from their place.We need a function
-       // that counts the number sheep present in the array (true means present).
-        public  class Kata
+        //Create a function that accepts 2 string arguments and returns an integer of the count of occurrences 
+        //the 2nd argument is found in the first one.
+
+        public static int StrCount(string str, string letter)
         {
-            public  int CountSheeps(bool[] sheeps)
-        {
-               
-                int count = 0;
-                for(int i = 0; i < sheeps.Length; i++)
+            int count = 0;
+
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (str[i] == char.Parse(letter))
                 {
-                    if(sheeps[i] == true)
-                    {
-                        count = count + 1;
-                       Console.WriteLine(count);
-                    }
-                    else
-                    {
-                        count = count + 0;
-                        
-                        Console.WriteLine(count);
-                    }
+                    count = count + 1;
                 }
-                 return count;
-               
-
-                 
-          
+                else
+                {
+                    count = count + 0;
+                }
+            }
+            return count;
         }
-    }
 
-    static void Main(string[] args)
+
+        public static void Main(string[] args)
         {
-            Kata kata = new Kata();
-            kata.CountSheeps(new bool[] { true, true, true, false,true,true });
             
-            
+            Console.WriteLine(Program.StrCount("comemmmmmmm", "m"));
         }
-
     }
+
 }
